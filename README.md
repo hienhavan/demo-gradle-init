@@ -12,11 +12,6 @@ Dự án cơ bản được quản lý bằng Gradle (gradle init). Dự án s�
 ```sh
 gradle init
 ```
-Chọn:
-- Application project (Single application project)
-- Java
-- JUnit Jupiter 
-
 ### 2. Thêm dependency vào `build.gradle`
 Mở file `build.gradle` và thêm:
 ```gradle
@@ -37,9 +32,9 @@ application {
     mainClass = 'Main'
 }
 ```
-- id 'java': Kích hoạt plugin Java, giúp Gradle hiểu rằng đây là một dự án Java, tự động hỗ trợ biên dịch (compile), chạy test (test), đóng gói (jar), v.v.
+- id 'java': Kích hoạt plugin Java, giúp Gradle hiểu rằng đây là một dự án Java, tự động hỗ trợ biên dịch (compile), chạy test (test), đóng gói (jar), ...
 - id 'application': Kích hoạt plugin Application, có thể chạy ứng dụng Java bằng lệnh gradle run. Nó cho phép chỉ định mainClass trong build.gradle để Gradle biết file Java nào sẽ được chạy.
-- mavenCentral(): Đây là kho Maven chính thức của Java, nơi chứa các thư viện phổ biến như commons-lang3, spring, hibernate, v.v.(Gradle sẽ tải chúng từ Maven Central.)
+- mavenCentral(): Là kho Maven chính thức của Java, nơi chứa các thư viện phổ biến như commons-lang3, spring, hibernate, v.v.(Gradle sẽ tải chúng từ Maven Central.)
  
 ### 3. Tạo file `Main.java`
 Mở `src/main/java/Main.java` và thêm đoạn code:
