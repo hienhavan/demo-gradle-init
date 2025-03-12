@@ -18,7 +18,7 @@ Chọn:
 - JUnit Jupiter 
 
 ### 2. Thêm dependency vào `build.gradle`
-Mở file `build.gradle` và thêm nội dung sau:
+Mở file `build.gradle` và thêm:
 ```gradle
 plugins {
     id 'java'
