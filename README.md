@@ -37,7 +37,10 @@ application {
     mainClass = 'Main'
 }
 ```
-
+- id 'java': Kích hoạt plugin Java, giúp Gradle hiểu rằng đây là một dự án Java, tự động hỗ trợ biên dịch (compile), chạy test (test), đóng gói (jar), v.v.
+- id 'application': Kích hoạt plugin Application, có thể chạy ứng dụng Java bằng lệnh gradle run. Nó cho phép chỉ định mainClass trong build.gradle để Gradle biết file Java nào sẽ được chạy.
+- mavenCentral(): Đây là kho Maven chính thức của Java, nơi chứa các thư viện phổ biến như commons-lang3, spring, hibernate, v.v.(Gradle sẽ tải chúng từ Maven Central.)
+ 
 ### 3. Tạo file `Main.java`
 Mở `src/main/java/Main.java` và thêm đoạn code:
 ```java
